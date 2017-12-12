@@ -18,6 +18,7 @@
 ;; Darcula theme
 ;; (load (expand-file-name "darcula-theme.el" user-emacs-directory))
 ;; (set-frame-font "FiraCode Medium 10")
+(set-frame-font "Fira Code Medium 11" nil t)
 
 ;; Enable line numbers
 ;; (global-linum-mode t)
