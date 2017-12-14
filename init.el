@@ -38,6 +38,9 @@
 ;; Highlight cursor line
 ;; (global-hl-line-mode 1)
 
+;; Set tab width = 4
+(setq-default tab-width 2)
+
 (custom-set-variables
  '(custom-enabled-themes (quote (wombat)))
  '(package-selected-packages (quote (powerline helm magit company))))
