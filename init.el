@@ -12,9 +12,6 @@
 (scroll-bar-mode 0)
 (tool-bar-mode 0)
 
-;; enable powerline
-(powerline-default-theme)
-
 ;; Darcula theme
 ;; (load (expand-file-name "darcula-theme.el" user-emacs-directory))
 ;; (set-frame-font "FiraCode Medium 10")
