@@ -46,8 +46,12 @@
 (defface powerline-inactive-b '((t (:background "#5A80CD" :inherit mode-line))) "Powerline face 1." :group 'powerline)
 (defface powerline-inactive-c '((t (:background "#5A80CD" :inherit mode-line))) "Powerline face 1." :group 'powerline)
 
-(face-spec-set 'powerline-active-c '((t (:background "#5A5BCD" :inherit mode-line))))
-(face-spec-set 'powerline-active-b '((t (:background "#374e94" :inherit mode-line))))
+;; second
+(face-spec-set 'powerline-active-a '((t (:background "#495FA4" :inherit mode-line))))
+;; last
+(face-spec-set 'powerline-active-b '((t (:background "#5a80cd" :inherit mode-line))))
+;; first
+(face-spec-set 'powerline-active-c '((t (:background "#374e94" :inherit mode-line))))
 
 (face-spec-set 'powerline-inactive-a '((t (:background "#41397D" :inherit mode-line))))
 (face-spec-set 'powerline-inactive-b '((t (:background "#41396D" :inherit mode-line))))
@@ -87,19 +91,19 @@
                                      ;; (powerline-narrow face1 'l)
                                      (powerline-raw " " face1)
                                      (funcall separator-left face1 face2)
-                                     (powerline-vc face2 'r)
+                                     ;; (powerline-vc face2 'r)
 																		 
                                      (when (bound-and-true-p nyan-mode) (powerline-raw (list (nyan-create)) face2 'l))
 																		 ))
                           (rhs (list (powerline-raw global-mode-string face2 'r)
-                                     (funcall separator-right face2 face1)
+																		 (powerline-vc face2 'r)
+																		 (funcall separator-right face2 face1)
 																		 (unless window-system
 																			 (powerline-raw (char-to-string #xe0a1) face1 'l))
-																		 (powerline-raw " %l:%c %p" face1 'r)
-																		 (when powerline-display-hud
-																			 (powerline-hud face2 face1)))))
+																		 (powerline-raw " %4l:%3c %p" face1 'r)
+																		 )))
 										 (concat (powerline-render lhs)
-														 (powerline-fill face2 (powerline-width rhs))
+										 				 (powerline-fill face2 (powerline-width rhs))
 														 (powerline-render rhs)))))))
 
 (powerline-custom-theme)
