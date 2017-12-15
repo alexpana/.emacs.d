@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: New method implementation
+# key: fn
+# --
+${1:void} ${2:`(cpp-class-name-in-buffer)`}::${3:Method}($4) {
+  $0
+}

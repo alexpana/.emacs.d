@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Unreal spawn actor
+# key: spawn
+# --
+
+GetWorld()->SpawnActor<$1>(${2:GetActorLocation()}, ${3:FRotator::ZeroRotator});

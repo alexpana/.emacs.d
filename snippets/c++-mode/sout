@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Unreal Log
+# key: sout
+# --
+UE_LOG(${1:LogTemp}, Log, TEXT("$2"));
