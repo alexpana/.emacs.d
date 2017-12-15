@@ -10,7 +10,8 @@
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
 ;; required packages declaration
-(setq package-list '(company magit helm org powerline org-bullets))
+(setq package-list '(company magit helm org powerline org-bullets
+														 yasnippet))
 
 ;; activate all the packages
 (package-initialize)
@@ -31,6 +32,10 @@
 ;; org-bullets
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+;; yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
 
 ;; powerline
 ;;;###autoload
