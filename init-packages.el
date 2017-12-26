@@ -30,19 +30,15 @@
 (require 'helm-config)
 
 ;; org-bullets
-(require 'org-bullets)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+;; (require 'org-bullets)
+;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 ;; yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
 
 ;; powerline
-;;;###autoload
-
 (setq powerline-default-separator 'contour)
-
-;; (face-spec-set 'powerline-active-1 '((t (:background "#5A80CD" :inherit mode-line))))
 
 (defface powerline-active-a '((t (:background "#5A80CD" :inherit mode-line))) "Powerline face 1." :group 'powerline)
 (defface powerline-active-b '((t (:background "#5A5BCD" :inherit mode-line))) "Powerline face 1." :group 'powerline)
