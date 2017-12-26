@@ -1,5 +1,3 @@
-(load "~/.emacs.d/modules/dev/clang-format/clang-format.el")
-
 (defun duplicate-line ()
   "Duplicate current line"
   (interactive)
@@ -44,6 +42,11 @@
 (global-set-key (kbd "C-/") 'comment-line)
 (global-set-key (kbd "C-d") 'duplicate-line)
 (global-set-key (kbd "C-x ~") 'set-window-width-80)
-(global-set-key (kbd "C-M-l") 'clang-format-buffer)
 (global-set-key (kbd "C-z") 'undo)
 (global-set-key (kbd "C-x C-z") 'undo)
+
+;; Clang format
+(global-set-key (kbd "C-M-l") 'clang-format-buffer)
+
+;; Unreal help at point
+(global-set-key (kbd "C-?") 'unreal-help-at-point)

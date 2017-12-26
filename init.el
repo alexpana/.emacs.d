@@ -1,5 +1,9 @@
 (package-initialize)
 
+;; Load user modules
+(load "~/.emacs.d/modules/dev/unreal/unreal.el")
+(load "~/.emacs.d/modules/dev/clang-format/clang-format.el")
+
 (load "~/.emacs.d/init-packages.el")
 (load "~/.emacs.d/init-keybindings.el")
 
