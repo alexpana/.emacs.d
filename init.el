@@ -32,14 +32,15 @@
 ;; Wrap on whitespace
 (global-visual-line-mode 1)
 
-;; Highlight cursor line
-;; (global-hl-line-mode 1)
-
 ;; Set tab width = 4
 (setq-default tab-width 2)
 
 ;; Use c++ mode for headers
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
+;; Setup line highlighting
+(global-hl-line-mode 0)
+(set-face-attribute hl-line-face nil :underline nil)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
