@@ -50,3 +50,4 @@
 
 ;; Unreal help at point
 (global-set-key (kbd "C-?") 'unreal-help-at-point)
+(global-set-key (kbd "C-|") 'unreal-open-source-file)
