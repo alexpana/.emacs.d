@@ -44,6 +44,8 @@
 (global-set-key (kbd "C-x ~") 'set-window-width-80)
 (global-set-key (kbd "C-z") 'undo)
 (global-set-key (kbd "C-x C-z") 'undo)
+(global-set-key (kbd "M-o") 'ff-find-other-file)
+(global-set-key (kbd "C-s") 'save-buffer)
 
 ;; Clang format
 (global-set-key (kbd "C-M-l") 'clang-format-buffer)
