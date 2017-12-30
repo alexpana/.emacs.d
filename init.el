@@ -21,6 +21,9 @@
 ;; (set-frame-font "FiraCode Medium 10")
 (set-frame-font "Fira Code 10" nil t)
 
+;; Always truncate lines
+(set-default 'truncate-lines t)
+
 ;; Enable line numbers
 ;; (global-linum-mode t)
 
