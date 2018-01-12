@@ -11,7 +11,7 @@
 
 ;; required packages declaration
 (setq package-list '(company magit helm org powerline org-bullets
-														 yasnippet))
+														 yasnippet rust-mode git-gutter neotree))
 
 ;; activate all the packages
 (package-initialize)

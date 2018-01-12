@@ -50,7 +50,6 @@
 (global-set-key (kbd "C-z") 'undo)
 (global-set-key (kbd "C-x C-z") 'undo)
 (global-set-key (kbd "M-o") 'ff-find-other-file)
-(global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-f") 'isearch-forward)
 (global-set-key (kbd "C-<f12>") 'tags-file-structure)
 

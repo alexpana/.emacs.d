@@ -55,16 +55,25 @@
 (setq auto-save-file-name-transforms
 			`((".*" ,temporary-file-directory t)))
 
+;; Git gutter
+(global-git-gutter-mode +1)
+(set-face-background 'git-gutter:modified "#356F9B")
+(set-face-background 'git-gutter:added "#7DC75C")
+(set-face-background 'git-gutter:deleted "#B9433")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(git-gutter:modified-sign " ")
+ '(git-gutter:added-sign " ")
+ '(git-gutter:deleted-sign " ")
  '(custom-enabled-themes (quote (wombat)))
  '(org-agenda-files (quote ("~/org/todo.org")))
  '(package-selected-packages
 	 (quote
-		(yasnippet-snippets yasnippet powerline helm magit company))))
+		(git-gutter neotree yasnippet-snippets yasnippet powerline helm magit company))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
