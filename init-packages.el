@@ -11,7 +11,8 @@
 
 ;; required packages declaration
 (setq package-list '(company magit helm org powerline org-bullets
-														 yasnippet rust-mode git-gutter neotree))
+														 yasnippet rust-mode git-gutter neotree
+														 gruvbox-theme))
 
 ;; activate all the packages
 (package-initialize)
@@ -38,7 +39,7 @@
 (yas-global-mode 1)
 
 ;; powerline
-(setq powerline-default-separator 'contour)
+(setq powerline-default-separator 'slant)
 
 (defface powerline-active-a '((t (:background "#5A80CD" :inherit mode-line))) "Powerline face 1." :group 'powerline)
 (defface powerline-active-b '((t (:background "#5A5BCD" :inherit mode-line))) "Powerline face 1." :group 'powerline)
@@ -50,7 +51,7 @@
 ;; second
 (face-spec-set 'powerline-active-a '((t (:background "#495FA4" :inherit mode-line))))
 ;; last
-(face-spec-set 'powerline-active-b '((t (:background "#5a80cd" :inherit mode-line))))
+(face-spec-set 'powerline-active-b '((t (:background "#495fA4" :inherit mode-line))))
 ;; first
 (face-spec-set 'powerline-active-c '((t (:background "#374e94" :inherit mode-line))))
 

@@ -66,14 +66,17 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(git-gutter:modified-sign " ")
+ '(custom-enabled-themes (quote (gruvbox)))
+ '(custom-safe-themes
+	 (quote
+		("d411730c6ed8440b4a2b92948d997c4b71332acf9bb13b31e9445da16445fe43" default)))
  '(git-gutter:added-sign " ")
  '(git-gutter:deleted-sign " ")
- '(custom-enabled-themes (quote (wombat)))
+ '(git-gutter:modified-sign " ")
  '(org-agenda-files (quote ("~/org/todo.org")))
  '(package-selected-packages
 	 (quote
-		(git-gutter neotree yasnippet-snippets yasnippet powerline helm magit company))))
+		(gruvbox-theme git-gutter neotree yasnippet-snippets yasnippet powerline helm magit company))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
