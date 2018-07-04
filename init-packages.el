@@ -12,7 +12,7 @@
 ;; required packages declaration
 (setq package-list '(company magit helm org powerline org-bullets
 														 yasnippet rust-mode git-gutter neotree
-														 gruvbox-theme))
+														 gruvbox-theme markdown-mode))
 
 ;; activate all the packages
 (package-initialize)
