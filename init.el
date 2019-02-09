@@ -25,7 +25,7 @@
 (set-default 'truncate-lines t)
 
 ;; Enable line numbers
-;; (global-linum-mode t)
+(global-display-line-numbers-mode)
 
 ;; Enable standard keyboard shortcuts for copy / paste
 ;;(cua-mode 1)
@@ -71,15 +71,15 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (gruvbox)))
  '(custom-safe-themes
-	 (quote
-		("d411730c6ed8440b4a2b92948d997c4b71332acf9bb13b31e9445da16445fe43" default)))
+   (quote
+    ("cd4d1a0656fee24dc062b997f54d6f9b7da8f6dc8053ac858f15820f9a04a679" "d411730c6ed8440b4a2b92948d997c4b71332acf9bb13b31e9445da16445fe43" default)))
  '(git-gutter:added-sign " ")
  '(git-gutter:deleted-sign " ")
  '(git-gutter:modified-sign " ")
- '(org-agenda-files (quote ("~/org/todo.org")))
+ '(org-agenda-files (quote ("~/org/personal.org")))
  '(package-selected-packages
-	 (quote
-		(gruvbox-theme git-gutter neotree yasnippet-snippets yasnippet powerline helm magit company))))
+   (quote
+    (go-mode gruvbox-theme git-gutter neotree yasnippet-snippets yasnippet powerline helm magit company))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
